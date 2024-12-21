@@ -1,0 +1,55 @@
+.property-card {
+  padding: 20px;
+  margin: 10px 0; 
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  object-fit: contain;
+}
+
+.property-card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+}
+
+.property-card-content {
+  display: flex; 
+  align-items: left;
+  padding: 20px; 
+}
+
+.property-image {
+  width: 100%; 
+  aspect-ratio: 4/3;
+  margin-right: 20px; 
+  border-radius: 8px;
+}
+
+.property-image img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+}
+
+.property-details {
+  width: 70%; 
+}
+
+.property-details h3 {
+  margin: 0; 
+  font-size: 1.5em; 
+  color: var(--text-color); 
+}
+
+.property-details p {
+  margin: 5px 0; 
+  font-size: 1em; 
+  color: var(--other-color); 
+}
+
+.property-details p strong {
+  font-weight: bold; 
+  color: var(--main-color); 
+}

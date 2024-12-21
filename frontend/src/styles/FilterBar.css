@@ -1,0 +1,24 @@
+.filter-bar {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.filter-input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 150px;
+}
+
+.price-selects {
+  display: flex;
+  gap: 10px;
+}
+
+.price-selects select {
+  width: 150px;
+}

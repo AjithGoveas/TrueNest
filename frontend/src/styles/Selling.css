@@ -1,0 +1,68 @@
+/* General styling */
+.selling {
+    padding: 60px 10%;
+    color: var(--text-color);
+    background: var(--bg-color);
+    text-align: center;
+    align-items: center;
+}
+
+.selling-heading {
+    font-size: var(--h2-font);
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+/* Contact Form */
+.selling-form {
+    margin-bottom: 4rem;
+    max-width: 500px; /* Limit the width */
+    margin-left: auto;
+    margin-right: auto; /* Center align the form */
+}
+
+.selling-form h3 {
+    font-size: var(--h2-font);
+    margin-bottom: 20px;
+}
+
+.selling-form .file-input {
+    font-size: var(--p-font);
+    display: block;
+    margin-bottom: 8px;
+    color: var(--other-color);
+}
+
+.selling-form input, .selling-form textarea, .selling-form select {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: var(--p-font);
+    border: 2px solid var(--main-color);
+    border-radius: 8px;
+    background: #fff;
+    color: #333;
+}
+
+.selling-form input::placeholder, .selling-form textarea::placeholder {
+    color: #aaa;
+}
+
+.selling-form textarea {
+    resize: none;
+}
+
+.submit-btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    background: var(--main-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-7px) scale(0.9);
+}
