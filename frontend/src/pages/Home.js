@@ -48,7 +48,7 @@ const Home = () => {
                         </a>
                         <a href="#" class="Residence-list">
                             <i class="fa-regular fa-square" id='fa-icon'></i>
-                            1209 spft
+                            1209 sqft
                         </a>
                     </div>
                 </div>
@@ -67,7 +67,7 @@ const Home = () => {
                         </a>
                         <a href="#" class="Residence-list">
                             <i class="fa-regular fa-square" id='fa-icon'></i>
-                            1569 spft
+                            1569 sqft
                         </a>
                     </div>
                 </div>
@@ -86,7 +86,7 @@ const Home = () => {
                         </a>
                         <a href="#" class="Residence-list">
                             <i class="fa-regular fa-square" id='fa-icon'></i>
-                            12000 spft
+                            12000 sqft
                         </a>
                     </div>
                 </div>
@@ -103,7 +103,7 @@ const Home = () => {
             <div class="abt-text">
                 <h2>We Help People To Find Their Dream Home</h2>
                 <p>At TrueNest, we make finding your dream home simple and stress-free. With expert guidance and personalized support, we help you discover a place that truly feels like home.</p>
-                <a href="#" class="btn">Get In Touch</a>
+                <Link to="/contact" class="btn">Get In Touch</Link>
             </div>
         </section>
         {/* Subscribe */}

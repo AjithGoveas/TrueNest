@@ -1,10 +1,9 @@
 /* General styling */
-.selling {
+.selling-page {
     padding: 60px 10%;
     color: var(--text-color);
     background: var(--bg-color);
     text-align: center;
-    align-items: center;
 }
 
 .selling-heading {
@@ -26,14 +25,19 @@
     margin-bottom: 20px;
 }
 
-.selling-form .file-input {
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
     font-size: var(--p-font);
     display: block;
     margin-bottom: 8px;
     color: var(--other-color);
 }
 
-.selling-form input, .selling-form textarea, .selling-form select {
+.form-group input, .form-group select {
     width: 100%;
     padding: 12px 15px;
     font-size: var(--p-font);
@@ -43,11 +47,11 @@
     color: #333;
 }
 
-.selling-form input::placeholder, .selling-form textarea::placeholder {
+.form-group input::placeholder, .form-group textarea::placeholder {
     color: #aaa;
 }
 
-.selling-form textarea {
+.form-group textarea {
     resize: none;
 }
 

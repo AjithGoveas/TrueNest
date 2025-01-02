@@ -1,9 +1,17 @@
-.buying {
-    padding: 60px 10%;
+/* General styling */
+.buying-page {
+  padding: 60px 10%;
+  color: var(--text-color);
+  background: var(--bg-color);
+  text-align: left;
+}
+
+.buying-heading {
+    font-size: var(--h2-font);
+    margin-bottom: 2rem;
     color: var(--text-color);
-    background: var(--bg-color);
-    /* text-align: center; */
-  }
+    text-align: center;
+}
   
   .property-list {
     display: grid;

@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 app.use(express.json());
 
 // Serve static files from assets/images folder
-app.use('/images', express.static(path.join(__dirname, 'assets', 'images')));
+// app.use('/images', express.static(path.join(__dirname, 'assets', 'images')));
 
 const uri = "mongodb://localhost:27017/truenest";
 

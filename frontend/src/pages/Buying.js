@@ -34,8 +34,8 @@ const Buying = () => {
   };
 
   return (
-    <div className="buying">
-      <h1 style={{ textAlign: 'center' }}>Properties for Sale</h1>
+    <div className="buying-page">
+      <h1 className='buying-heading'>Properties for Sale</h1>
       
       {/* FilterBar Component for user to set filters and sort option */}
       <FilterBar

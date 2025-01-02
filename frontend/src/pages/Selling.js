@@ -49,65 +49,107 @@ const Selling = () => {
   };
 
   return (
-    <div className="selling">
+    <div className="selling-page">
       <h1 className="selling-heading">Sell or Rent Your Property</h1>
       <form className="selling-form" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="name"
-          placeholder="Property Name"
-          value={formData.name}
-          onChange={handleInputChange}
-          required
-        />
-        <select name="type" value={formData.type} onChange={handleInputChange} required>
-          <option value="">Select Type</option>
-          <option value="sale">Sale</option>
-          <option value="rent">Rent</option>
-        </select>
-        <input
-          type="number"
-          name="price"
-          placeholder="Price"
-          value={formData.price}
-          onChange={handleInputChange}
-          required
-        />
-        <input
-          type="text"
-          name="location"
-          placeholder="Location"
-          value={formData.location}
-          onChange={handleInputChange}
-          required
-        />
-        <input
-          type="number"
-          name="rating"
-          placeholder="Rating (1-5)"
-          value={formData.rating}
-          onChange={handleInputChange}
-          min="1"
-          max="5"
-          required
-        />
-        <input
-          type="text"
-          name="owner"
-          placeholder="Owner Name"
-          value={formData.owner}
-          onChange={handleInputChange}
-          required
-        />
-        <input
-          type="text"
-          name="ownerPhone"
-          placeholder="Owner Phone"
-          value={formData.ownerPhone}
-          onChange={handleInputChange}
-          required
-        />
-        <input className="file-input" type="file" multiple onChange={handleImageChange} accept="image/*" required />
+        <div className='form-group'>
+          <label htmlFor='name'>Property Name</label>
+          <input
+            type="text"
+            id='name'
+            name="name"
+            placeholder="Enter Property Name"
+            value={formData.name}
+            onChange={handleInputChange}
+            required
+          />
+        </div>
+        <div className='form-group'>
+        <label htmlFor='type'>Property Type</label>
+          <select
+            name="type"
+            id='type'
+            value={formData.type}
+            onChange={handleInputChange}
+            required >
+            <option value="">Select Type</option>
+            <option value="sale">Sale</option>
+            <option value="rent">Rent</option>
+          </select>
+        </div> 
+        <div className='form-group'>
+          <label htmlFor='price'>Price</label>
+          <input
+            type="number"
+            name="price"
+            id='price'
+            placeholder="Enter Price"
+            value={formData.price}
+            onChange={handleInputChange}
+            required
+          />
+        </div>
+        <div className='form-group'>
+          <label htmlFor='location'>Location</label>
+          <input
+            type="text"
+            name="location"
+            id='location'
+            placeholder="Enter Location"
+            value={formData.location}
+            onChange={handleInputChange}
+            required
+          />
+        </div>
+        <div className='form-group'>
+          <label htmlFor='rating'>Location</label>
+          <input
+            type="number"
+            name="rating"
+            id='rating'
+            placeholder="Rating (1-5)"
+            value={formData.rating}
+            onChange={handleInputChange}
+            min="1"
+            max="5"
+            required
+          />
+        </div>
+        <div className='form-group'>
+          <label htmlFor='owner'>Owner Name</label>
+          <input
+            type="text"
+            name="owner"
+            id='owner'
+            placeholder="Enter Owner Name"
+            value={formData.owner}
+            onChange={handleInputChange}
+            required
+          />
+        </div>
+        <div className='form-group'>
+          <label htmlFor='ownerPhone'>Owner Phone</label>
+          <input
+            type="text"
+            name="ownerPhone"
+            id='ownerPhone'
+            placeholder="Owner Phone"
+            value={formData.ownerPhone}
+            onChange={handleInputChange}
+            required
+          />
+        </div>
+        <div className='form-group'>
+          <label htmlFor='pictures'>Upload Pictures</label>
+          <input
+            className="file-input"
+            id='pictures'
+            type="file" multiple
+            onChange={handleImageChange}
+            accept="image/*"
+            required
+          />
+        </div>
         <button type="submit" className='submit-btn'>Submit</button>
       </form>
       {message && <p>{message}</p>}
